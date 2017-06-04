@@ -1,0 +1,376 @@
+<!doctype html>
+<html>
+<head>
+	<!-- Basic Page Needs -->
+        <meta charset="utf-8">
+        <title>Cinema Anne</title>
+        <meta name="description" content="A Template by Gozha.net">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Gozha.net">
+    
+    <!-- Mobile Specific Metas-->
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="telephone=no" name="format-detection">
+    
+    <!-- Fonts -->
+        <!-- Font awesome - icon font -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- Roboto -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    
+    <!-- Stylesheets -->
+        <!-- jQuery UI --> 
+        <link href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
+
+        <!-- Mobile menu -->
+        <link href="css/gozha-nav.css" rel="stylesheet" />
+        <!-- Select -->
+        <link href="css/external/jquery.selectbox.css" rel="stylesheet" />
+        <!-- Swiper slider -->
+        <link href="css/external/idangerous.swiper.css" rel="stylesheet" />
+        <!-- Magnific-popup -->
+        <link href="css/external/magnific-popup.css" rel="stylesheet" />
+
+    
+        <!-- Custom -->
+        <link href="css/style.css?v=1" rel="stylesheet" />
+
+        <!-- Modernizr --> 
+        <script src="js/external/modernizr.custom.js"></script>  
+    
+    
+</head> 
+
+<body>
+    <div class="wrapper">
+        <!-- Banner -->
+        <div class="banner-top">
+            <img alt='top banner' src="images/banners/banner.png">
+        </div>
+
+        <!-- Header section -->
+        <header class="header-wrapper">
+            <div class="container">
+                <!-- Logo link-->
+                <a href='index.html' class="logo">
+                    <img alt='logo' src="images/c_cinema_logo1-.jpg">
+                </a>
+                
+                <!-- Main website navigation-->
+                <nav id="navigation-box">
+                    <!-- Toggle for mobile menu mode -->
+                    <a href="#" id="navigation-toggle">
+                        <span class="menu-icon">
+                            <span class="icon-toggle" role="button" aria-label="Toggle Navigation">
+                              <span class="lines"></span>
+                            </span>
+                        </span>
+                    </a>
+                    
+                    <!-- Link navigation -->
+                    <ul id="navigation">
+                        <li>
+                            <span class="sub-nav-toggle plus"></span>
+                            <a href="#">Pages</a>
+                            <ul>
+                                  <li class="menu__nav-item"><a href="movie-list-full.html">Movies list (full widht)</a></li>
+                                
+                               
+                                <li class="menu__nav-item"><a href="contact.html">Contact us</a></li>
+                            
+                               
+                                <li class="menu__nav-item"><a href="login.html">Login/Registration</a></li>
+                            </ul>
+                        </li>
+                       
+                        <li>
+                            <span class="sub-nav-toggle plus"></span>
+                            <a href="page-elements.html">Booking steps</a>
+                            <ul>
+                                <li class="menu__nav-item"><a href="book1.html">Booking step 1</a></li>
+                                <li class="menu__nav-item"><a href="book2.html">Booking step 2</a></li>
+                                <li class="menu__nav-item"><a href="book3-buy.html">Booking step 3 (buy)</a></li>
+                                <li class="menu__nav-item"><a href="book3-reserve.html">Booking step 3 (reserve)</a></li>
+                                <li class="menu__nav-item"><a href="book-final.html">Final ticket view</a></li>
+                            </ul>
+                        </li>
+                       
+                       
+                        <li>
+                            <span class="sub-nav-toggle plus"></span>
+                            <a href="#">Mega menu</a>
+                               <ul class="mega-menu container">
+                                    <li class="col-md-3 mega-menu__coloum">
+                                       <h4 class="mega-menu__heading">Now in the cinema</h4>
+                                         <ul class="mega-menu__list">
+                                            <li class="mega-menu__nav-item"><a href="#">Baywatch</a></li>
+                                            <li class="mega-menu__nav-item"><a href="#">Wonder Woman</a></li>
+                                            <li class="mega-menu__nav-item"><a href="#">Pirates of Caribbean:Dead men tells no tales</a></li>
+                                            <li class="mega-menu__nav-item"><a href="#">The other side of hope</a></li>
+                                            <li class="mega-menu__nav-item"><a href="#">Snatched</a></li>
+                                            <li class="mega-menu__nav-item"><a href="#">The circle</a></li>
+											<li class="mega-menu__nav-item"><a href="#">Deep</a></li>
+		
+                                          </ul>
+                                      </li>
+                                        
+                                      <li class="col-md-3 mega-menu__coloum mega-menu__coloum--outheading">
+                                          <ul class="mega-menu__list">
+                                            <li class="mega-menu__nav-item"><a href="#">How to be a Latin lover</a></li>
+                                            <li class="mega-menu__nav-item"><a href="#">March of the penguins 2</a></li>
+                                            <li class="mega-menu__nav-item"><a href="#">Alien: Covenant</a></li>
+                                            <li class="mega-menu__nav-item"><a href="#">Richard the stork</a></li>
+                                          </ul>
+                                      </li>
+                                    
+                                      
+                                     
+                </nav>
+                
+                <!-- Additional header buttons / Auth and direct link to booking-->
+                <div class="control-panel">
+                    <a href="#" class="btn btn--sign login-window">Sign in</a>
+                    <a href="#" class="btn btn-md btn--warning btn--book login-window">Book a ticket</a>
+                </div>
+
+            </div>
+        </header>
+        
+        <!-- Search bar -->
+        <div class="search-wrapper">
+            <div class="container container--add">
+                <form id='search-form' method='get' class="search">
+                    <input type="text" class="search__field" placeholder="Search">
+                    <select name="sorting_item" id="search-sort" class="search__sort" tabindex="0">
+                        <option value="1" selected='selected'>By title</option>
+                        <option value="2">By year</option>
+                        <option value="3">By producer</option>
+                        <option value="4">By title</option>
+                        <option value="5">By year</option>
+                    </select>
+                    <button type='submit' class="btn btn-md btn--danger search__button">search a movie</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Main content -->
+        <section class="container">
+            <div class="col-sm-8 col-md-9">
+                <div class="movie">
+                    <h2 class="page-heading">The Fate of the Furious</h2>
+                    
+                    <div class="movie__info">
+                        <div class="col-sm-6 col-md-4 movie-mobile">
+                            <div class="movie__images">
+                       
+                                <img alt='' src="images/movie/furiosi1.jpg">
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-8">
+                            <p class="movie__time">136 min</p>
+
+                            <p class="movie__option"><strong>Year: </strong><a href="#">2017</a></p>
+                            <p class="movie__option"><strong>Category: </strong><a href="#">Action</a>| <a href="#"> Crime </a>| <a href="#">Thriller</a></p>
+                            <p class="movie__option"><strong>Release date: </strong>April  21, 2017</p>
+                            <p class="movie__option"><strong>Director: </strong><a href="#">F. Gary Gray</a></p>
+                            <p class="movie__option"><strong>Casting: </strong><a href-="#">Charlize Therone</a> | <a href-="#">Vin Diesel</a> | <a href-="#"> Dwayne Johnson </a> </p>
+                            <p class="movie__option"><strong>Age restriction: </strong><a href="#">12</a></p>
+                            <p class="movie__option"><strong>Language: </strong><a href="#">English</a></p>
+
+                            
+
+                            <div class="movie__btns">
+                                <a href="#" class="btn btn-md btn--warning">book a ticket for this movie</a>
+                                <a href="#" class="watchlist">Add to watchlist</a>
+                            </div>
+							
+
+                           
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="clearfix"></div>
+                    
+                    <h2 class="page-heading">The plot</h2>
+
+                    <p class="movie__describe">When a mysterious woman seduces Dom into the world of terrorism and a betrayal of those closest to him, the crew face trials that will test them as never before.</p>
+
+                    <h2 class="page-heading">photos &amp; videos</h2>
+                    
+                    <div class="movie__media">
+                        <div class="movie__media-switch">
+                            
+                            <a href="#" class="watchlist list--video" data-filter='media-video'>1 video</a>
+                        </div>
+
+                        <div class="swiper-container">
+                          <div class="swiper-wrapper">
+                              <!--First Slide-->
+                              <div class="swiper-slide media-video">
+                                <a href='https://www.youtube.com/watch?v=5XBmsl7wbIQ' class="movie__media-item ">
+                                     <img alt='' src="images/movie/furiosi2.jpg">
+                                </a>
+                              </div>
+						 </div>
+                        </div>      
+                             
+                             
+                </div>
+
+                <h2 class="page-heading">showtime &amp; tickets</h2>
+                <div class="choose-container">
+                    <form id='select' class="select" method='get'>
+                          <select name="select_item" id="select-sort" class="select__sort" tabindex="0">
+                            <option value="1" selected='selected'>Timisoara Iulius Mall</option>
+                            <option value="2">Timisoara Shopping City</option>
+                            <option value="3">Bucuresti</option>
+                            <option value="4">Bucuresti Afi Palace</option>
+                            <option value="5">Targu-Jiu</option>
+                            <option value="6">Arad</option>
+                            <option value="7">Craiova</option>
+                            <option value="8">Cluj Polus</option>
+							<option value="9">Constanta City Park</option>
+                        </select>
+                    </form>
+
+                    <div class="datepicker">
+                      <span class="datepicker__marker"><i class="fa fa-calendar"></i>Date</span>
+                      <input type="text" id="datepicker" value='08/06/2017' class="datepicker__input">
+                    </div>
+
+                    <a href="#" id="map-switch" class="watchlist watchlist--map"><span class="show-map">Show cinemas on map</span><span  class="show-time">Show cinema time table</span></a>
+                    
+                    <div class="clearfix"></div>
+
+                    <div class="time-select">
+                        <div class="time-select__group group--first">
+                            <div class="col-sm-4">
+                                <p class="time-select__place">Cinema 1</p>
+                            </div>
+                            <ul class="col-sm-8 items-wrap">
+                                <li class="time-select__item" data-time='09:40'>09:40</li>
+                                <li class="time-select__item" data-time='13:45'>13:45</li>
+                                <li class="time-select__item active" data-time='15:45'>15:45</li>
+                                <li class="time-select__item" data-time='19:50'>19:50</li>
+                                <li class="time-select__item" data-time='21:50'>21:50</li>
+                            </ul>
+                        </div>
+
+                        <div class="time-select__group">
+                            <div class="col-sm-4">
+                                <p class="time-select__place">Cinema 2</p>
+                            </div>
+                            <ul class="col-sm-8 items-wrap">
+                                <li class="time-select__item" data-time='10:45'>10:45</li>
+                                <li class="time-select__item" data-time='16:00'>16:00</li>
+                                <li class="time-select__item" data-time='19:00'>19:00</li>
+                                <li class="time-select__item" data-time='21:15'>21:15</li>
+                                <li class="time-select__item" data-time='23:00'>23:00</li>
+                            </ul>
+                        </div>
+
+                        <div class="time-select__group">
+                            <div class="col-sm-4">
+                                <p class="time-select__place">Cinema 3</p>
+                            </div>
+                            <ul class="col-sm-8 items-wrap">
+                                <li class="time-select__item" data-time='09:00'>09:00</li>
+                                <li class="time-select__item" data-time='11:00'>11:00</li>
+                                <li class="time-select__item" data-time='13:00'>13:00</li>
+                                <li class="time-select__item" data-time='15:00'>15:00</li>
+                                <li class="time-select__item" data-time='17:00'>17:00</li>
+                                <li class="time-select__item" data-time='19:0'>19:00</li>
+                                <li class="time-select__item" data-time='21:0'>21:00</li>
+                                <li class="time-select__item" data-time='23:0'>23:00</li>
+                                <li class="time-select__item" data-time='01:0'>01:00</li>
+                            </ul>
+                        </div>
+
+                        <div class="time-select__group">
+                            <div class="col-sm-4">
+                                <p class="time-select__place">Cinema 4</p>
+                            </div>
+                            <ul class="col-sm-8 items-wrap">
+                                <li class="time-select__item" data-time='10:45'>10:45</li>
+                                <li class="time-select__item" data-time='16:00'>16:00</li>
+                                <li class="time-select__item" data-time='19:00'>19:00</li>
+                                <li class="time-select__item" data-time='21:15'>21:15</li>
+                                <li class="time-select__item" data-time='23:00'>23:00</li>
+                            </ul>
+                        </div>
+
+                        <div class="time-select__group group--last">
+                            <div class="col-sm-4">
+                                <p class="time-select__place">Sala 5</p>
+                            </div>
+                            <ul class="col-sm-8 items-wrap">
+                                <li class="time-select__item" data-time='17:45'>17:45</li>
+                                <li class="time-select__item" data-time='21:30'>21:30</li>
+                                <li class="time-select__item" data-time='02:20'>02:20</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- hiden maps with multiple locator-->
+                    <div class="map">
+                        <div id='cimenas-map'></div> 
+                    </div>
+
+        
+ 
+            </section>
+        </footer>
+    </div>
+
+   
+
+	<!-- JavaScript-->
+        <!-- jQuery 3.1.1--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/external/jquery-3.1.1.min.js"><\/script>')</script>
+        <!-- Migrate --> 
+        <script src="js/external/jquery-migrate-1.2.1.min.js"></script>
+        <!-- jQuery UI -->
+        <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <!-- Bootstrap 3--> 
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+        <!-- Mobile menu -->
+        <script src="js/jquery.mobile.menu.js"></script>
+         <!-- Select -->
+        <script src="js/external/jquery.selectbox-0.2.min.js"></script>
+
+        <!-- Stars rate -->
+        <script src="js/external/jquery.raty.js"></script>
+        <!-- Swiper slider -->
+        <script src="js/external/idangerous.swiper.min.js"></script>
+        <!-- Magnific-popup -->
+        <script src="js/external/jquery.magnific-popup.min.js"></script>  
+
+        <!--*** Google map  ***-->
+        <script src="https://maps.google.com/maps/api/js?sensor=true"></script> 
+        <!--*** Google map infobox  ***-->
+        <script src="js/external/infobox.js"></script> 
+
+        <!-- Share buttons -->
+        <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-525fd5e9061e7ef0"></script>
+
+        <!-- Form element -->
+        <script src="js/external/form-element.js"></script>
+        <!-- Form validation -->
+        <script src="js/form.js"></script>
+
+        <!-- Custom -->
+        <script src="js/custom.js"></script>
+		
+		<script type="text/javascript">
+            $(document).ready(function() {
+                init_MoviePage();
+            });
+		</script>
+
+</body>

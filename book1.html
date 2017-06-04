@@ -1,0 +1,481 @@
+<!doctype html>
+<html>
+<head>
+	<!-- Basic Page Needs -->
+        <meta charset="utf-8">
+        <title>Cinema Anne - Booking step 1</title>
+        <meta name="description" content="A Template by Gozha.net">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Gozha.net">
+    
+    <!-- Mobile Specific Metas-->
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="telephone=no" name="format-detection">
+    
+    <!-- Fonts -->
+        <!-- Font awesome - icon font -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- Roboto -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    
+    <!-- Stylesheets -->
+    <!-- jQuery UI --> 
+        <link href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
+
+        <!-- Mobile menu -->
+        <link href="css/gozha-nav.css" rel="stylesheet" />
+        <!-- Select -->
+        <link href="css/external/jquery.selectbox.css" rel="stylesheet" />
+        <!-- Swiper slider -->
+        <link href="css/external/idangerous.swiper.css" rel="stylesheet" />
+    
+        <!-- Custom -->
+        <link href="css/style.css?v=1" rel="stylesheet" />
+
+        <!-- Modernizr --> 
+        <script src="js/external/modernizr.custom.js"></script>
+    
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Banner -->
+        <div class="banner-top">
+            <img alt='top banner' src="images/banners/banner.png">
+        </div>
+
+        <!-- Header section -->
+        <header class="header-wrapper">
+            <div class="container">
+                <!-- Logo link-->
+                <a href='index.html' class="logo">
+                    <img alt='logo' src="images/c_cinema_logo1-.jpg">
+                </a>
+                
+                <!-- Main website navigation-->
+                <nav id="navigation-box">
+                    <!-- Toggle for mobile menu mode -->
+                    <a href="#" id="navigation-toggle">
+                        <span class="menu-icon">
+                            <span class="icon-toggle" role="button" aria-label="Toggle Navigation">
+                              <span class="lines"></span>
+                            </span>
+                        </span>
+                    </a>
+                    
+                    <!-- Link navigation -->
+                    <ul id="navigation">
+                        <li>
+                            <span class="sub-nav-toggle plus"></span>
+                            <a href="#">Pages</a>
+                            <ul>
+                                  <li class="menu__nav-item"><a href="movie-list-full.html">Movies list (full widht)</a></li>
+                                
+                                <li class="menu__nav-item"><a href="offers.html">Offers</a></li>
+                                <li class="menu__nav-item"><a href="contact.html">Contact us</a></li>
+                            
+                               
+                                <li class="menu__nav-item"><a href="login.html">Login/Registration</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <span class="sub-nav-toggle plus"></span>
+                            <a href="page-elements.html">Booking steps</a>
+                            <ul>
+                                <li class="menu__nav-item"><a href="book1.html">Booking step 1</a></li>
+                                <li class="menu__nav-item"><a href="book2.html">Booking step 2</a></li>
+                                <li class="menu__nav-item"><a href="book3-buy.html">Booking step 3 (buy)</a></li>
+                                <li class="menu__nav-item"><a href="book3-reserve.html">Booking step 3 (reserve)</a></li>
+                                <li class="menu__nav-item"><a href="book-final.html">Final ticket view</a></li>
+                            </ul>
+                        </li>
+                       
+                        
+                       <li>
+                            <span class="sub-nav-toggle plus"></span>
+                            <a href="#">Mega menu</a>
+                               <ul class="mega-menu container">
+                                    <li class="col-md-3 mega-menu__coloum">
+                                        <h4 class="mega-menu__heading">Now in the cinema</h4>
+                                         <ul class="mega-menu__list">
+                                            <li class="mega-menu__nav-item"><a href="#">Baywatch</a></li>
+                                            <li class="mega-menu__nav-item"><a href="#">Wonder Woman</a></li>
+                                            <li class="mega-menu__nav-item"><a href="#">Pirates of Caribbean:Dead men tells no tales</a></li>
+                                            <li class="mega-menu__nav-item"><a href="#">The Fate of the Furious</a></li>
+                                            <li class="mega-menu__nav-item"><a href="#">Snatched</a></li>
+                                            <li class="mega-menu__nav-item"><a href="#">The circle</a></li>
+											<li class="mega-menu__nav-item"><a href="#">Deep</a></li>
+	
+											<li class="mega-menu__nav-item"><a href="#">King Arthur: The Legend of the Sword</a></li>
+		
+		
+                                          </ul>
+                                      </li>
+                                        
+                				<li class="col-md-3 mega-menu__coloum mega-menu__coloum--outheading">
+                                          <ul class="mega-menu__list">
+                                            <li class="mega-menu__nav-item"><a href="#">How to be a Latin lover</a></li>
+                                            <li class="mega-menu__nav-item"><a href="#">March of the penguins 2</a></li>
+                                            <li class="mega-menu__nav-item"><a href="#">Alien: Covenant</a></li>
+                                            <li class="mega-menu__nav-item"><a href="#">Richard the stork</a></li>
+                                          </ul>
+                                      </li>
+                                    </ul>
+                               </ul>
+                        </li>
+                                     
+                       
+                </nav>
+                
+                <!-- Additional header buttons / Auth and direct link to booking-->
+                <div class="control-panel">
+                    <a href="#" class="btn btn--sign login-window">Sign in</a>
+                    <a href="#" class="btn btn-md btn--warning btn--book login-window">Book a ticket</a>
+                </div>
+
+            </div>
+        </header>
+        
+        <!-- Search bar -->
+        <div class="search-wrapper">
+            <div class="container container--add">
+                <form id='search-form' method='get' class="search">
+                    <input type="text" class="search__field" placeholder="Search">
+                    <select name="sorting_item" id="search-sort" class="search__sort" tabindex="0">
+                        <option value="1" selected='selected'>By title</option>
+                        <option value="2">By year</option>
+                        <option value="3">By producer</option>
+                        <option value="4">By title</option>
+                        <option value="5">By year</option>
+                    </select>
+                    <button type='submit' class="btn btn-md btn--danger search__button">search a movie</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Main content -->
+
+        <section class="container">
+            <div class="order-container">
+                <div class="order">
+                    <img class="order__images" alt='' src="images/tickets.png">
+                    <p class="order__title">Book a ticket <br><span class="order__descript">and have fun movie time</span></p>
+                    <div class="order__control">
+                        <a href="#" class="order__control-btn active">Purchase</a>
+                        <a href="#" class="order__control-btn">Reserve</a>
+                    </div>
+                </div>
+            </div>
+                <div class="order-step-area">
+                    <div class="order-step first--step">1. What &amp; Where &amp; When</div>
+                </div>
+
+            <h2 class="page-heading heading--outcontainer">Choose a movie</h2>
+        </section>
+        
+        <div class="choose-film">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                  <!--First Slide-->
+                  <div class="swiper-slide" data-film='Baywatch'> 
+                        <div class="film-images">
+                            <img alt='' src="images/movie/movie-sample1.jpg">
+                        </div>
+                        <p class="choose-film__title">Baywatch</p>
+                  </div>
+                  
+                  <!--Second Slide-->
+                  <div class="swiper-slide" data-film='Wonder Woman'>
+                        <div class="film-images">
+                            <img alt='' src="images/movie/movie-sample3.jpg">
+                        </div>
+                        <p class="choose-film__title">Wonder Woman</p>
+                  </div>
+                  
+                  <!--Third Slide-->
+                  <div class="swiper-slide" data-film='Pirates of Caribbean: Dead Men tell No Tales'> 
+                        <div class="film-images">
+                            <img alt='' src="images/movie/movie-sample2.jpg">
+                        </div>
+                        <p class="choose-film__title">Pirates of Caribbean: Dead Men tell No Tales</p>
+                  </div>
+                  
+                  <!--Four Slide-->
+                  <div class="swiper-slide" data-film='Snatched'> 
+                        <div class="film-images">
+                            <img alt='' src="images/movie/snatched1.jpg">
+                        </div>
+                        <p class="choose-film__title">Snatched</p>
+                  </div>
+
+                  <!--Five Slide-->
+                  <div class="swiper-slide" data-film='Deep'> 
+                        <div class="film-images">
+                            <img alt='' src="images/movie/movie-sample6.jpg">
+                        </div>
+                        <p class="choose-film__title">Deep</p>
+                  </div>
+
+                  <!--Six Slide-->
+                  <div class="swiper-slide" data-film='The Circle'> 
+                        <div class="film-images">
+                            <img alt='' src="images/movie/thecircle1.jpg">
+                        </div>
+                        <p class="choose-film__title">The Circle</p>
+                  </div>
+
+                  <!--Seven Slide-->
+                  <div class="swiper-slide" data-film='How to be a Latin Lover '> 
+                        <div class="film-images">
+                            <img alt='' src="images/movie/latin1.jpg">
+                        </div>
+                        <p class="choose-film__title">How to be a Latin lover</p>
+                  </div>
+
+                  <!--Eight Slide-->
+                  <div class="swiper-slide" data-film='March of the Penguins'> 
+                        <div class="film-images">.
+							<img alt='' src="images/movie/pingu1.jpg">
+                        </div>
+                        <p class="choose-film__title">March of the Penguins</p>
+                  </div>
+
+                  <!--Nine Slide-->
+                  <div class="swiper-slide" data-film='King Arthur:The legend of the sword'> 
+                        <div class="film-images">
+                            <img alt='' src="images/movie/movie-sample4.jpg">
+                        </div>
+                        <p class="choose-film__title">King Arthur:The legend of the sword</p>
+                  </div>
+
+                  <!--Ten Slide-->
+                  <div class="swiper-slide" data-film='Alien:Covenant'> 
+                        <div class="film-images">
+                            <img alt='' src="images/movie/alien1.jpg">
+                        </div>
+                        <p class="choose-film__title">Alien: Covenant </p>
+                  </div>
+				  <!--Eleven Slide-->
+                  <div class="swiper-slide" data-film='Richard the stork'> 
+                        <div class="film-images">
+                            <img alt='' src="images/movie/richard1.jpg">
+                        </div>
+                        <p class="choose-film__title">Richard the stork </p>
+					
+                  </div>
+				   <!--Twelve Slide-->
+                  <div class="swiper-slide" data-film='The Fate of the Furious'> 
+                        <div class="film-images">
+                            <img alt='' src="images/movie/furiosi1.jpg">
+                        </div>
+                        <p class="choose-film__title">The Fate of the Furious</p>
+					
+                  </div>
+				  
+              </div>
+            </div>
+        </div>
+
+        <section class="container">
+            <div class="col-sm-12">
+                <div class="choose-indector choose-indector--film">
+                    <strong>Choosen: </strong><span class="choosen-area"></span>
+                </div>
+
+                <h2 class="page-heading">City &amp; Date</h2>
+
+                <div class="choose-container choose-container--short">
+                    <form id='select' class="select" method='get'>
+                          <select name="select_item" id="select-sort" class="select__sort" tabindex="0">
+                            <option value="1" selected='selected'>Timisoara Iulius Mall</option>
+                            <option value="2">Timisoara Shopping City</option>
+                            <option value="3">Bucuresti</option>
+                            <option value="4">Bucuresti Afi Palace</option>
+                            <option value="5">Targu-Jiu</option>
+                            <option value="6">Craiova</option>
+                            <option value="7">Arad</option>
+                            <option value="8">Cluj Polus</option>
+							<option value="9">Constanta City Park</option>
+                        </select>
+                    </form>
+
+                    <div class="datepicker">
+                      <span class="datepicker__marker"><i class="fa fa-calendar"></i>Date</span>
+                      <input type="text" id="datepicker" value='08/06/2017' class="datepicker__input">
+                    </div>
+                </div>
+
+                <h2 class="page-heading">Pick time</h2>
+
+                <div class="time-select time-select--wide">
+                        <div class="time-select__group group--first">
+                            <div class="col-sm-3">
+                                <p class="time-select__place">Sala 1</p>
+                            </div>
+                            <ul class="col-sm-6 items-wrap">
+                                <li class="time-select__item" data-time='09:40'>09:40</li>
+                                <li class="time-select__item" data-time='13:45'>13:45</li>
+                                <li class="time-select__item" data-time='15:45'>15:45</li>
+                                <li class="time-select__item" data-time='19:50'>19:50</li>
+                                <li class="time-select__item" data-time='21:50'>21:50</li>
+                            </ul>
+                        </div>
+
+                        <div class="time-select__group">
+                            <div class="col-sm-3">
+                                <p class="time-select__place">Sala 2</p>
+                            </div>
+                            <ul class="col-sm-6 items-wrap">
+                                <li class="time-select__item" data-time='10:45'>10:45</li>
+                                <li class="time-select__item" data-time='16:00'>16:00</li>
+                                <li class="time-select__item" data-time='19:00'>19:00</li>
+                                <li class="time-select__item" data-time='21:15'>21:15</li>
+                                <li class="time-select__item" data-time='23:00'>23:00</li>
+                            </ul>
+                        </div>
+
+                        <div class="time-select__group">
+                            <div class="col-sm-3">
+                                <p class="time-select__place">Sala 3</p>
+                            </div>
+                            <ul class="col-sm-6 items-wrap">
+                                <li class="time-select__item" data-time='09:00'>09:00</li>
+                                <li class="time-select__item" data-time='11:00'>11:00</li>
+                                <li class="time-select__item" data-time='13:00'>13:00</li>
+                                <li class="time-select__item" data-time='15:00'>15:00</li>
+                                <li class="time-select__item" data-time='17:00'>17:00</li>
+                                <li class="time-select__item" data-time='19:00'>19:00</li>
+                                <li class="time-select__item" data-time='21:00'>21:00</li>
+                                <li class="time-select__item" data-time='23:00'>23:00</li>
+                                <li class="time-select__item" data-time='01:00'>01:00</li>
+                            </ul>
+                        </div>
+
+                        <div class="time-select__group">
+                            <div class="col-sm-3">
+                                <p class="time-select__place">Sala 4</p>
+                            </div>
+                            <ul class="col-sm-6 items-wrap">
+                                <li class="time-select__item" data-time='10:45'>10:45</li>
+                                <li class="time-select__item" data-time='16:00'>16:00</li>
+                                <li class="time-select__item" data-time='19:00'>19:00</li>
+                                <li class="time-select__item" data-time='21:15'>21:15</li>
+                                <li class="time-select__item" data-time='23:00'>23:00</li>
+                            </ul>
+                        </div>
+
+                        <div class="time-select__group group--last">
+                            <div class="col-sm-3">
+                                <p class="time-select__place">Sala 5</p>
+                            </div>
+                            <ul class="col-sm-6 items-wrap">
+                                <li class="time-select__item" data-time='17:45'>17:45</li>
+                                <li class="time-select__item" data-time='21:30'>21:30</li>
+                                <li class="time-select__item" data-time='02:20'>02:20</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                <div class="choose-indector choose-indector--time">
+                    <strong>Choosen: </strong><span class="choosen-area"></span>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="clearfix"></div>
+
+        <form id='film-and-time' class="booking-form" method='get' action='book2.html'>
+            <input type='text' name='choosen-movie' class="choosen-movie">
+
+            <input type='text' name='choosen-city' class="choosen-city">
+            <input type='text' name='choosen-date' class="choosen-date">
+            
+            <input type='text' name='choosen-cinema' class="choosen-cinema">
+            <input type='text' name='choosen-time' class="choosen-time">
+        
+
+            <div class="booking-pagination">
+                    <a href="#" class="booking-pagination__prev hide--arrow">
+                        <span class="arrow__text arrow--prev"></span>
+                        <span class="arrow__info"></span>
+                    </a>
+                    <a href="book2.html" class="booking-pagination__next">
+                        <span class="arrow__text arrow--next">next step</span>
+                        <span class="arrow__info">choose a sit</span>
+                    </a>
+            </div>
+
+        </form>
+        
+        <div class="clearfix"></div>
+
+        
+
+    <!-- open/close -->
+        <div class="overlay overlay-hugeinc">
+            
+            <section class="container">
+
+                <div class="col-sm-4 col-sm-offset-4">
+                    <button type="button" class="overlay-close">Close</button>
+                    <form id="login-form" class="login" method='get' novalidate=''>
+                        <p class="login__title">sign in <br><span class="login-edition">welcome to Cinema Anne</span></p>
+
+                        
+                        
+                        
+                        <div class="field-wrap">
+                        <input type='email' placeholder='Email' name='user-email' class="login__input">
+                        <input type='password' placeholder='Password' name='user-password' class="login__input">
+
+                        <input type='checkbox' id='#informed' class='login__check styled'>
+                        <label for='#informed' class='login__check-info'>remember me</label>
+                         </div>
+                        
+                        <div class="login__control">
+                            <button type='submit' class="btn btn-md btn--warning btn--wider">sign in</button>
+                            <a href="#" class="login__tracker form__tracker">Forgot password?</a>
+                        </div>
+                    </form>
+                </div>
+
+            </section>
+        </div>
+
+	<!-- JavaScript-->
+        <!-- jQuery 3.1.1--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/external/jquery-3.1.1.min.js"><\/script>')</script>
+        <!-- Migrate --> 
+        <script src="js/external/jquery-migrate-1.2.1.min.js"></script>
+        <!-- jQuery UI -->
+        <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <!-- Bootstrap 3--> 
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+        <!-- Mobile menu -->
+        <script src="js/jquery.mobile.menu.js"></script>
+         <!-- Select -->
+        <script src="js/external/jquery.selectbox-0.2.min.js"></script>
+        <!-- Swiper slider -->
+        <script src="js/external/idangerous.swiper.min.js"></script>
+
+        <!-- Form element -->
+        <script src="js/external/form-element.js"></script>
+        <!-- Form validation -->
+        <script src="js/form.js"></script>
+
+        <!-- Custom -->
+        <script src="js/custom.js"></script>
+		
+		<script type="text/javascript">
+            $(document).ready(function() {
+                init_BookingOne();
+            });
+		</script>
+
+</body>
+</html>
